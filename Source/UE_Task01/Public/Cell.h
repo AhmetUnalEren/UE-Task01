@@ -20,12 +20,8 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	
-	UPROPERTY(EditAnywhere)
-	USphereComponent* ColliderComp;
-	
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 	UStaticMeshComponent* MeshComponent;
-	
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
